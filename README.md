@@ -1,5 +1,5 @@
 # 🖼️📁 Easy AI: zero-shot image classification 
-[![Run in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/belisards/zeroshot_img_classifier/blob/main/interface.ipynb)
+[![Run in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb)
 
 This repository provides a Python script and graphic user interface for zero-shot image classification using open-source models from [HuggingFace](https://huggingface.co/)'s library. 
 
@@ -34,7 +34,7 @@ jupyter nbextension install --py widgetsnbextension --user
 jupyter nbextension enable widgetsnbextension --user --py
 ```
 
-This configuration above is automatically handled in [Google Colab](https://colab.research.google.com/github/belisards/zeroshot_img_classifier/blob/main/interface.ipynb).
+This configuration above is automatically handled in [Google Colab](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb).
 
 ## Command-Line 
 Requires Python 3.10.
