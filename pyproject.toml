@@ -1,13 +1,13 @@
 [tool.poetry]
-name = "zero-shot-image-classification"
+name = "smart-image-sorter"
 version = "0.1.0"
-description = ""
-authors = ["Bellingcat"]
+description = " User friendly zero-shot image classification using open-source models from HuggingFace's library"
+authors = ["Bellingcat","Adriano Belisario"]
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
-# torch = "^2.3.1"
 requests = "^2.32.3"
 ipython = "^8.26.0"
 datasets = "^2.20.0"
