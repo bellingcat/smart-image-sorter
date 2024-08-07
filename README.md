@@ -10,6 +10,7 @@ The script organizes images into labelled folders based on the classification re
 
 You can test this tool with a set of 32 images extracted by Bellingcat from Telegram groups. The images are available in the `imgs/` folder.
 
+
 ## Features
 - Zero-shot image classification using Hugging Face's models.
 
@@ -20,6 +21,20 @@ You can test this tool with a set of 32 images extracted by Bellingcat from Tele
 - Option to copy or move images after classification.
 
 - Generates a CSV file with classification results.
+
+### Instructions
+
+Requires Python 3.10.
+
+1. Clone the repository.
+
+1. Follow the instructions to install Pytorch: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
+
+1. Install the other required packages using `pip install -r requirements.txt`. Or use Poetry: `poetry install`.
+
+1. Run the script replacing the arguments as needed:
+
+`python classifier.py --source="imgs/" --destination="labeled/" --labels="cat,object" --operation="copy" --output_file="output.csv" --batch_size=32 --verbose=True`
 
 ## Graphic user interface
 
@@ -39,8 +54,6 @@ jupyter nbextension enable widgetsnbextension --user --py
 
 This configuration above is automatically handled in [Google Colab](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb).
 
-## Command-Line 
-Requires Python 3.10.
 
 ### Arguments
 `--source`: Path to the source directory containing the images. Default is `imgs/`.
@@ -59,15 +72,6 @@ Requires Python 3.10.
 
 `--verbose`: Verbose output showing progress and model used. Default is `True`.
 
-### Instructions
-1. Clone the repository.
 
-1. Follow the instructions to install Pytorch: [https://pytorch.org/get-started/locally/](https://pytorch.org/get-started/locally/)
-
-1. Install the other required packages using `pip install -r requirements.txt`. Or use Poetry: `poetry install`.
-
-1. Run the script replacing the arguments as needed:
-
-`python classifier.py --source="imgs/" --destination="labeled/" --labels="cat,object" --operation="copy" --output_file="output.csv" --batch_size=32 --verbose=True`
 
 
