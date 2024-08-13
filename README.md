@@ -4,14 +4,14 @@
 --><a href="https://discord.gg/bellingcat"><img alt="Discord logo: Join our community" src="https://img.shields.io/badge/Join%20our%20community-%20?style=for-the-badge&logo=discord&logoColor=%23fff&color=%235865F2"></a><!--
 --><a href="https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb"><img alt="Colab icon: Try it on Colab" src="https://img.shields.io/badge/Try%20it%20on%20Colab-%20?style=for-the-badge&logo=googlecolab&logoColor=fff&logoSize=auto&color=e8710a"></a>
 
-This repository provides a Python script and graphic user interface for zero-shot image classification using open-source models from [Hugging Face](https://huggingface.co/)'s library. 
+This repository provides a Python script and graphic user interface for zero-shot image classification using open-source models from [Hugging Face](https://huggingface.co/)'s library.
 
 The script organises images into labelled folders based on the classification results. It can be used as a command-line tool or as a user interface in Jupyter Notebook.
 
 You can test this tool with a set of 32 images extracted by Bellingcat from Telegram groups. The images are available in the `imgs/` folder.
 
-
 ## Features
+
 - Zero-shot image classification using Hugging Face's models.
 
 - Supports batch processing of images.
@@ -34,9 +34,10 @@ Requires Python 3.10.
 
 1. Run the script replacing the arguments as needed:
 
-`python classifier.py --source="imgs/" --destination="labeled/" --labels="cat,object" --operation="copy" --output_file="output.csv" --batch_size=32 --verbose=True`
+`python classifier.py --source="imgs/" --destination="labelled/" --labels="cat,object" --operation="copy" --output_file="output.csv" --batch_size=32 --verbose=True`
 
 ### Arguments
+
 `--source`: Path to the source directory containing the images. Default is `imgs/`.
 
 `--destination`: Path to the destination directory for classified images. Default is `labelled/`.
@@ -53,10 +54,9 @@ Requires Python 3.10.
 
 `--verbose`: Detailed output showing progress and model used. Default is `True`.
 
+## Graphical User Interface (GUI)
 
-## Graphical user interface
-
-You can run the tool entirely from the command line, but if you want to use the graphic user interface locally, make sure to enable the Jupyter Notebook extension for widgets:
+You can run the tool entirely from the command line, but if you want to use the GUI locally, make sure to enable the Jupyter Notebook extension for widgets:
 
 ```
 jupyter nbextension enable --py widgetsnbextension --sys-prefix
@@ -69,5 +69,5 @@ jupyter nbextension install --py widgetsnbextension --user
 ```
 jupyter nbextension enable widgetsnbextension --user --py
 ```
-Alternatively, you can run the tool on your browser using  [Google Colab](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb), which handles the GUI automatically. You can refer to our [guide here on how to do this](#).
 
+Alternatively, you can run the tool on your browser using [Google Colab](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb), which handles the GUI automatically. You can refer to our [guide here on how to do this](#).
