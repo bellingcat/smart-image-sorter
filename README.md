@@ -70,4 +70,4 @@ jupyter nbextension install --py widgetsnbextension --user
 jupyter nbextension enable widgetsnbextension --user --py
 ```
 
-Alternatively, you can run the tool on your browser using [Google Colab](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb), which handles the GUI automatically. You can refer to our [guide here on how to do this](#).
+Alternatively, you can run the tool on your browser using [Google Colab](https://colab.research.google.com/github/bellingcat/smart-image-sorter/blob/main/interface.ipynb), which handles the GUI automatically. You can refer to our [guide here on how to do this](https://www.bellingcat.com/resources/how-tos/2024/08/15/easy-ai-zero-shot-ai-image-classification-smart-image-sorter/).
