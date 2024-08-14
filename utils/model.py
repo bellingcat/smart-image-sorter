@@ -28,7 +28,6 @@ def classify_images(image_files, destination, model_name, labels, operation='cop
 
     for start in tqdm(range(0, len(image_files), batch_size), desc=f"Classifying {len(image_files)} images in batches of {batch_size}..."):
         batch_files = image_files[start:start+batch_size]
-        batch_results = []
         for image in batch_files:
             #print(f"Processing {image}")
             try:
@@ -36,7 +35,6 @@ def classify_images(image_files, destination, model_name, labels, operation='cop
                 label = result[0]['label']
                 # print(f"Label: {label}")
                 score = round(result[0]['score'],2)
-                # batch_results.append((image, label, score))
                 results.append((image, label, score))
                 label_dir = os.path.join(destination, label)
                 if not os.path.exists(label_dir):
